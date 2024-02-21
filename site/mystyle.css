@@ -39,3 +39,13 @@ a {
   font-weight: bold;
   color: #C0C0C0;
 }
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+ul {
+  text-align: center;
+  padding: 10px;
+}
