@@ -2,7 +2,6 @@ body {background-color: #262626}
 
 h1,
 h2,
-h3,
 p,
 ul,
 ls {
@@ -16,8 +15,7 @@ ls {
   font-size: 16px;
 }
 
-h2,
-h3 {
+h2 {
   font-size: 24px;
 }
 
@@ -31,7 +29,8 @@ h1 {
 img {
   border: 5px solid #FFD700;
   width: 400px;
-  heigh: 50%px
+  display: block;
+  margin: auto;
 }
 
 a {
@@ -48,4 +47,9 @@ li {
 ul {
   text-align: center;
   padding: 10px;
+}
+
+#CenterLists {
+  display: list-item;
+  list-style: none;
 }
