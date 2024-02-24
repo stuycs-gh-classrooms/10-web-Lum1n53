@@ -7,8 +7,7 @@ body {
 }
 
 p,
-ul,
-li {
+ul {
   font-size: 16px;
 }
 
@@ -46,14 +45,26 @@ ul {
   padding: 10px;
 }
 
-#CenterLists {
-  text-align: end;
+#quotes {
   display: list-item;
   list-style: none;
+  text-align: end;
 }
 
 #p0img {
   float: left;
+}
+
+#index {
+  text-align: center;
+}
+
+#lightLinks {
+  margin-top: 5%;
+}
+
+#coverPage {
+  
 }
 
 .attributes {
