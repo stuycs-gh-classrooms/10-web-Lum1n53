@@ -1,17 +1,14 @@
-body {background-color: #262626}
 
-h1,
-h2,
-p,
-ul,
-ls {
+body {
   color: #FFD700;
   font-family: "Arial" serif;
+  background-color: #262626;
+  padding: 5px;
 }
 
 p,
 ul,
-ls {
+li {
   font-size: 16px;
 }
 
@@ -50,6 +47,20 @@ ul {
 }
 
 #CenterLists {
+  text-align: end;
   display: list-item;
   list-style: none;
+}
+
+#p0img {
+  float: left;
+}
+
+.attributes {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.quotes {
+  margin-top: 200px;
 }
