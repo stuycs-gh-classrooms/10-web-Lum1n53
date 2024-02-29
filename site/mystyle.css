@@ -22,13 +22,6 @@ h1 {
   text-align: center;
 }
 
-img {
-  border: 5px solid #FFD700;
-  width: 400px;
-  display: block;
-  margin: auto;
-}
-
 a {
   font-size: 24px;
   font-weight: bold;
@@ -51,28 +44,27 @@ ul {
   text-align: end;
 }
 
-#p0img {
+img {
   border: 5px solid #FFD700;
-  width: 400px;
   display: block;
   margin: auto;
   float: left;
+}
+
+#p0img {
+  width: 400px;
 }
 
 #p1img {
-  border: 5px solid #FFD700;
   width: 380px;
-  display: block;
-  margin: auto;
-  float: left;
 }
 
 #p2img {
-  border: 5px solid #FFD700;
   width: 700px;
-  display: block;
-  margin: auto;
-  float: left;
+}
+
+#coverPage {
+  width: 600px
 }
 
 #index {
@@ -97,6 +89,23 @@ ul {
 
 #yjk {
   color: #FFD700;
+}
+
+#source {
+  color: #FFD700;
+  font-size: 18px;
+}
+
+#Synopsis {
+  margin-top: 15%;
+  text-align: end;
+  margin-left: 50%;
+  font-size: 24px
+}
+
+#caption {
+  text-align: start;
+  margin-top: 29%
 }
 
 .attributes {
