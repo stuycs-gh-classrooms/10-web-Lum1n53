@@ -37,3 +37,11 @@ pre {
   display: block;
   float: right;
 }
+
+.normal {
+  margin-bottom: 50px;
+}
+
+hr {
+  color: #FFD700;
+}
