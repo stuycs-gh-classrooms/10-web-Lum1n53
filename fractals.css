@@ -1,6 +1,4 @@
-body,
-code,
-pre {
+body {
   color: #FFD700;
   font-family: "Arial" serif;
   background-color: #262626;
@@ -27,4 +25,10 @@ img {
   display: block;
   margin-left: 75%;
   float: right;
+}
+
+code,
+pre {
+  color: #FFD700;
+  font-family: "Arial" serif;
 }
