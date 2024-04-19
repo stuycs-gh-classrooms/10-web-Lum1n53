@@ -8,13 +8,13 @@
     <h1>Welcome to modded Fractals!</h1>
     <h2>Koch Curve</h2>
     <p1>
-      " Default Curve "
+      Default Curve
       <code>koch_curve(t, 4, 20)</code>
     </p1>
     <img src="site/images/normal_koch.png" alt="normal koch">
     <p1>
-      " The modified Koch Curve will move backwards half a step each time while changing it's color to any random rgb color. "
-      <code>koch_curve(t, 4, 20)</code>
+      The modified Koch Curve will move backwards half a step each time while changing it's color to any random rgb color.
+      <code>mod_koch_curve(t, 4, 20)</code>
     </p1>
     <img src="site/images/mod_koch.png" alt="mod koch">
     <pre>
@@ -32,6 +32,39 @@
           mod_koch_curve(t, depth-1, size)
           t.lt(60)
           mod_koch_curve(t, depth-1, size)
+      </code>
+    </pre>
+
+    <h2>Sierpinski Triangle</h2>
+    <p1>
+      Default Sierpinski
+      <code>sierpinski(michelangelo, 5, 200)</code>
+    </p1>
+    <img src="site/images/normal_sierpinski.png" alt="normal sierpinski">
+    <p1>
+      The modified Sierpinski Triangle will change it's color to green and change it's pensize everytime given a range of 0-5. Assume that another function named "triangle" draws a equilateral triangle.
+      <code>mod_sierpinski(t, 5, 200)</code>
+    </p1>
+    <img src="site/images/mod_sierpinski.png" alt="mod sierpinski">
+    <pre>
+      <code>
+        def mod_sierpinski(t, depth, size, scale_factor=1):
+            if depth == 1:
+                triangle(t, size)
+                t.pensize(random.randrange(5))
+            else:
+                t.color((0, 255, 0))
+                mod_sierpinski(t, depth-1, size/2)
+                t.fd(size/2)
+                mod_sierpinski(t, depth-1, size/2)
+                t.bk(size/2)
+                t.lt(60)
+                t.fd(size/2)
+                t.rt(60)
+                mod_sierpinski(t, depth-1, size/2)
+                t.rt(120)
+                t.fd(size/2)
+                t.lt(120)
       </code>
     </pre>
   </body>
