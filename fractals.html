@@ -6,5 +6,33 @@
   </head>
   <body>
     <h1>Welcome to modded Fractals!</h1>
+    <h2>Koch Curve</h2>
+    <p1>
+      Default Curve
+      <code>koch_curve(t, 4, 20)</code>
+    </p1>
+    <img src="images/nomral_koch.png" alt="normal koch">
+    <p1>
+      The modified Koch Curve will move backwards half a step each time while changing it's color to any random rgb color.
+      <code>koch_curve(t, 4, 20)</code>
+    </p1>
+    <img src="images/mod_koch.png" alt="mod koch">
+    <pre>
+      <code>
+        def mod_koch_curve(t, depth, size):
+          if (depth == 1):
+            t.color(((random.randrange(255)), (random.randrange(255)), (random.randrange(255))))
+              t.fd(size)
+              t.bk(size/2)
+          else:
+          mod_koch_curve(t, depth-1, size)
+          t.lt(60)
+          mod_koch_curve(t, depth-1, size)
+          t.rt(120)
+          mod_koch_curve(t, depth-1, size)
+          t.lt(60)
+          mod_koch_curve(t, depth-1, size)
+      </code>
+    </pre>
   </body>
 </html>
