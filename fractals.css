@@ -1,4 +1,6 @@
-body {
+body,
+code,
+pre {
   color: #FFD700;
   font-family: "Arial" serif;
   background-color: #262626;
@@ -23,6 +25,6 @@ h1 {
 img {
   border: 5px solid #FFD700;
   display: block;
-  margin: auto;
+  margin-left; 75%
   float: right;
 }
