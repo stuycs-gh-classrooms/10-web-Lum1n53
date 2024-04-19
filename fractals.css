@@ -34,6 +34,6 @@ pre {
 }
 
 .modded {
-  margin-left: 75%;
+  display: block;
   float: left;
 }
