@@ -1,30 +1,40 @@
-body,
-code,
-pre {
-  color: #FFD700;
-  font-family: "Arial" serif;
-  background-color: #262626;
-  padding: 5px;
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the entire document */
+    margin: 20px; /* Adds margin around the document */
 }
 
-p,
-ul {
-  font-size: 18px;
+/* Style for headings */
+h1, h2 {
+    color: #333; /* Sets a dark color for the headings */
+    margin-bottom: 10px; /* Adds margin below the headings */
 }
 
-h2 {
-  font-size: 24px;
+/* Style for paragraphs */
+p {
+    margin-bottom: 15px; /* Adds space below each paragraph */
 }
 
-h1 {
-  font-size: 48px;
-  border: 5px solid #C0C0C0;
-  text-align: center;
-}
-
+/* Style for images */
 img {
-  border: 5px solid #FFD700;
-  display: block;
-  margin-left; 75%
-  float: right;
+    display: block; /* Ensures each image is displayed on its own line */
+    margin: 10px auto; /* Adds margin around images and centers them */
+    max-width: 100%; /* Limits the width of images to the width of the parent element */
+}
+
+/* Style for code blocks */
+code {
+    background-color: #f5f5f5; /* Sets a light gray background for code blocks */
+    padding: 5px; /* Adds padding around the code blocks */
+    border-radius: 5px; /* Rounds the corners of the code blocks */
+    display: block; /* Ensures code blocks appear on their own lines */
+    margin-bottom: 15px; /* Adds space below each code block */
+}
+
+/* Style for preformatted text */
+pre {
+    background-color: #f5f5f5; /* Sets a light gray background for preformatted text */
+    padding: 10px; /* Adds padding around the preformatted text */
+    border-radius: 5px; /* Rounds the corners */
+    overflow-x: auto; /* Adds horizontal scrolling if the content is too wide */
 }
