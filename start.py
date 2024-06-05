@@ -28,10 +28,11 @@ if ('name' in data):
     name = data['name'].value
 guide = 'Chiron'
 if ('guide' in data):
-    bgcolor = data['guide'].value
+    guide = data['guide'].value
 
 html= HTML_HEADER
 html+= '<h1>Welcome to Camp-Half-Blood ' + name + '</h1>'
+html+= 'My name is ' + guide + 'I will give you a tour of the camp today'
 html+= '<br><a href="start.html">Try Again</a>'
 html+= HTML_FOOTER
 print(html)
